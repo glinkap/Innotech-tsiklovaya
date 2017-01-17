@@ -1,0 +1,25 @@
+{
+  "name": "shablon1",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^4.1.1",
+    "gulp": "^3.9.1",
+    "bootstrap4": "^0.0.1-security",
+    "gulp-autoprefixer": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "example": "examples"
+  },
+  "description": ""
+}

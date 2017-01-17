@@ -1,0 +1,23 @@
+{
+  "name": "shablon1",
+  "authors": [
+    "Petr Glinka <glinkap@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap": "4.*"
+  },
+  "private": true
+}
