@@ -7,11 +7,11 @@ var gulp = require('gulp'),
  
 gulp.task('sass', function () {
   return gulp.src('./assets/sass/**/*.scss')
-	.pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))    
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./assets/css'));
+    	.pipe(sourcemaps.init())
+      .pipe(sass().on('error', sass.logError))    
+      .pipe(autoprefixer())
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('./assets/css'));
 });
  
 gulp.task('sass:watch', function () {

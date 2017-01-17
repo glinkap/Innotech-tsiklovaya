@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.92);
   overflow-y: hidden;
   -webkit-transition: 0.5s;
           transition: 0.5s; }
@@ -14,7 +14,7 @@
     text-align: left;
     padding: 8px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     color: #818181;
     display: block;
     -webkit-transition: 0.3s;
@@ -48,6 +48,29 @@
 .menu-header {
   font-size: 26px;
   line-height: 1.2;
-  color: white; }
+  color: white;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white; }
+
+.nav-collapse-fix .navbar-header {
+  float: none; }
+
+.nav-collapse-fix .navbar-toggle {
+  display: block; }
+
+.nav-collapse-fix .navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+  .nav-collapse-fix .navbar-collapse.collapse {
+    display: none !important; }
+
+.nav-collapse-fix .navbar-nav {
+  float: none !important;
+  margin: 7.5px -15px; }
+  .nav-collapse-fix .navbar-nav > li {
+    float: none; }
+    .nav-collapse-fix .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px; }
 
 /*# sourceMappingURL=menu.css.map */

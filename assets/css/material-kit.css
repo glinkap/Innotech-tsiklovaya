@@ -1903,7 +1903,7 @@ legend {
       background-color: transparent; }
     .navbar .navbar-toggle .icon-bar {
       background-color: inherit;
-      border: 1px solid; }
+      border: 2px solid; }
   .navbar .navbar-default .navbar-toggle,
   .navbar .navbar-inverse .navbar-toggle {
     border-color: transparent; }
@@ -3176,7 +3176,7 @@ h2.title {
   height: 90vh; }
 
 .index-page .brand {
-  margin-top: 30vh;
+  margin-top: 23vh;
   color: #FFFFFF;
   text-align: center; }
   .index-page .brand h1 {
