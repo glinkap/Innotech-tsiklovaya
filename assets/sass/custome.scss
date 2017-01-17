@@ -1,19 +1,25 @@
 .soderjanie {
 	a {
-		    font-size: 18px;
-    line-height: 1.3;
-    margin-bottom: 0px;
+		font-size: 18px;
+		line-height: 1.3;
+		margin-bottom: 0px;
 		display: block;	
 		color: #333;	
 	}
 
 	h3 {	
-	line-height: 1.2;
-	padding-bottom: 15px;
-    border-bottom: 1px solid #333; 
-	
+		line-height: 1.2;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #333; 
+		margin-bottom: 35px;
+	}
+	.material-icons {
+		vertical-align: middle;
+		// font-size: 34px;
+		
 	}
 }
 
 // hamburger fix
 .navbar-toggle .icon-bar { width: 46px;}
+

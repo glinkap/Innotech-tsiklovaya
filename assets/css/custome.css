@@ -8,7 +8,11 @@
 .soderjanie h3 {
   line-height: 1.2;
   padding-bottom: 15px;
-  border-bottom: 1px solid #333; }
+  border-bottom: 1px solid #333;
+  margin-bottom: 35px; }
+
+.soderjanie .material-icons {
+  vertical-align: middle; }
 
 .navbar-toggle .icon-bar {
   width: 46px; }
