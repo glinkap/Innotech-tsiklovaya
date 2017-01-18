@@ -80,4 +80,10 @@
   -webkit-transition: all 150ms ease 0s;
   transition: all 150ms ease 0s; }
 
+.mark-cell {
+  background-color: rgba(52, 122, 183, 0.15); }
+
+.product-page h3 {
+  margin-bottom: 30px; }
+
 /*# sourceMappingURL=custome.css.map */
