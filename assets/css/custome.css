@@ -17,4 +17,63 @@
 .navbar-toggle .icon-bar {
   width: 46px; }
 
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+
+.panel .panel-heading a {
+  color: #3C4858; }
+
+.panel .panel-heading i {
+  float: right; }
+
+.panel .panel-heading a[aria-expanded="true"] .panel-title > i, .panel .panel-heading a.expanded .panel-title > i {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.panel .panel-heading .panel-title {
+  font-size: 15px;
+  font-weight: bolder; }
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit; }
+
+.panel .panel-heading a:hover, .panel .panel-heading a:active, .panel .panel-heading a[aria-expanded="true"] {
+  color: #008cff; }
+
+.panel .panel-heading {
+  background-color: transparent !important;
+  border-bottom: 1px solid #ddd;
+  padding: 25px 10px 5px 0px; }
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd; }
+  .panel-default > .panel-heading a {
+    text-decoration: none; }
+
+.product-page .wrapper > .header {
+  min-height: 430px;
+  /* background-position: center center; */
+  background-size: cover; }
+
+.product-page .main-raised {
+  margin: -40vh 0px 0px;
+  padding: 40px; }
+
+.product-page .page-header .container {
+  padding-top: 18vh; }
+
+.product-page .page-header {
+  height: 50vh;
+  background-position: top center; }
+
 /*# sourceMappingURL=custome.css.map */
