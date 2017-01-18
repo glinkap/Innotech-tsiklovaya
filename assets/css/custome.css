@@ -76,4 +76,8 @@
   height: 50vh;
   background-position: top center; }
 
+.animation-transition-fast, .navbar, .panel .panel-heading i, .presentation-page .section-cards .card, .index-page .section-cards .card, .product-page .flexi-nav > li a {
+  -webkit-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s; }
+
 /*# sourceMappingURL=custome.css.map */
