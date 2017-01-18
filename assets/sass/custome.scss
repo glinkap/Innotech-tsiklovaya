@@ -124,10 +124,18 @@
 
 
 
-.mark-cell {
-	background-color: hsla(208, 56%, 46%, 0.15);
+.mark-cell,.marked-cell {
+	background-color: hsla(208, 56%, 46%, 0.76) !important;
+	// background-color: #04a6ec !important;
+    color: white;
+    // font-weight: 500;
 }
 
 .product-page h3 {
 	margin-bottom: 30px;
+}
+
+
+.table-hover>tbody>tr:hover {
+    background-color: hsla(208, 56%, 46%, 0.2);
 }

@@ -80,10 +80,14 @@
   -webkit-transition: all 150ms ease 0s;
   transition: all 150ms ease 0s; }
 
-.mark-cell {
-  background-color: rgba(52, 122, 183, 0.15); }
+.mark-cell, .marked-cell {
+  background-color: rgba(52, 122, 183, 0.76) !important;
+  color: white; }
 
 .product-page h3 {
   margin-bottom: 30px; }
+
+.table-hover > tbody > tr:hover {
+  background-color: rgba(52, 122, 183, 0.2); }
 
 /*# sourceMappingURL=custome.css.map */
