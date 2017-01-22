@@ -13,7 +13,7 @@ $seashell: #f1f1f1;
     left: 0;
     background-color: $black;
     background-color: $black_90;
-    overflow-y: hidden;
+    overflow-y: auto;
     //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
     transition: 0.5s;
     a {

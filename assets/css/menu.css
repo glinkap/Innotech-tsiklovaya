@@ -7,7 +7,7 @@
   left: 0;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.92);
-  overflow-y: hidden;
+  overflow-y: auto;
   -webkit-transition: 0.5s;
           transition: 0.5s; }
   .overlay a {
