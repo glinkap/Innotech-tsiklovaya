@@ -7,9 +7,12 @@
   left: 0;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.92);
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-transition: 0.5s;
           transition: 0.5s; }
+  @media screen and (max-width: 992px) {
+    .overlay {
+      overflow-y: auto; } }
   .overlay a {
     text-align: left;
     padding: 8px;
