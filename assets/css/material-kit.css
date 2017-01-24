@@ -3246,12 +3246,6 @@ h2.title {
 .signup-page .footer a {
   color: #FFFFFF; }
 
-.landing-page .navbar-transparent,
-.profile-page .navbar-transparent,
-.signup-page .navbar-transparent,
-.index-page .navbar-transparent {
-  padding-top: 25px; }
-
 @media (max-width: 991px) {
   .landing-page .header {
     height: auto;

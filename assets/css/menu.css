@@ -4,7 +4,15 @@ ul li {
 ul.nav-wrapper li {
   z-index: 1; }
 
+.navbar-transparent {
+  background: transparent !important;
+  -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+
 .global-nav {
+  -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+  background-color: rgba(39, 113, 174, 0.91);
   position: relative;
   position: fixed;
   z-index: 1030;
@@ -14,7 +22,7 @@ ul.nav-wrapper li {
     margin: 0; }
 
 .nav-inner {
-  margin: 30px; }
+  margin: 20px 30px; }
 
 .nav-wrapper {
   display: -webkit-box;
