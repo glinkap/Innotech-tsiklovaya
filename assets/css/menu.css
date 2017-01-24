@@ -1,82 +1,170 @@
-.overlay {
-  height: 0;
-  width: 100%;
+ul li {
+  list-style-type: none; }
+
+ul.nav-wrapper li {
+  z-index: 1; }
+
+.global-nav {
+  position: relative;
   position: fixed;
-  z-index: 1031;
+  z-index: 1030;
+  width: 100%; }
+  .global-nav ul {
+    padding: 0;
+    margin: 0; }
+
+.nav-inner {
+  margin: 30px; }
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .nav-wrapper a {
+    -webkit-transition: all 0.35s;
+            transition: all 0.35s; }
+  .nav-wrapper a:hover {
+    color: rgba(255, 255, 255, 0.6); }
+
+.navsection-logo {
+  -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+  .navsection-logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .navsection-logo:hover {
+    fill-opacity: 0.6; }
+  .navsection-logo svg {
+    width: 117px; }
+
+.navsection-primary {
+  display: none; }
+  .navsection-primary a {
+    font-size: 12px;
+    margin: 0;
+    padding: 0 8px; }
+  .navsection-primary ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    padding: 0 8px; }
+
+.navsection-mobile {
+  display: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.mobilemenu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 28px;
+  width: 34px;
+  cursor: pointer;
+  z-index: 500;
+  -webkit-transition: opacity 0.25s ease;
+          transition: opacity 0.25s ease; }
+  .mobilemenu-wrapper:hover {
+    opacity: 0.6; }
+  .mobilemenu-wrapper h2 {
+    font-size: 0 !important; }
+  .mobilemenu-wrapper.active .bar-1 {
+    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+            transform: translateY(11px) translateX(0) rotate(45deg);
+    background: white; }
+  .mobilemenu-wrapper.active .bar-2 {
+    opacity: 0;
+    background: white; }
+  .mobilemenu-wrapper.active .bar-3 {
+    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+            transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: white; }
+  .mobilemenu-wrapper span {
+    background: white;
+    border: none;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+    cursor: pointer; }
+    .mobilemenu-wrapper span:nth-of-type(1) {
+      top: 0; }
+    .mobilemenu-wrapper span:nth-of-type(2) {
+      top: 11px; }
+    .mobilemenu-wrapper span:nth-of-type(3) {
+      top: 22px; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.95);
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.92);
-  overflow-y: hidden;
-  -webkit-transition: 0.5s;
-          transition: 0.5s; }
-  @media screen and (max-width: 992px) {
-    .overlay {
-      overflow-y: auto; } }
-  .overlay a {
-    text-align: left;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
-    -webkit-transition: 0.3s;
-            transition: 0.3s; }
-    .overlay a:hover {
-      color: #f1f1f1; }
-    .overlay a:focus {
-      color: #f1f1f1; }
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px; }
-
-.overlay-content {
-  position: relative;
-  top: 8%;
   width: 100%;
-  margin-top: 30px; }
+  height: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0.35s, height 0.35s;
+          transition: visibility 0.35s, height 0.35s;
+  overflow: auto; }
+  .overlay.open {
+    visibility: visible;
+    height: 100%; }
+  .overlay .overlay-flex-wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+    .overlay .overlay-flex-wrapper h2 {
+      font-size: 2.4rem;
+      font-weight: 400;
+      border-bottom: 1px solid white;
+      padding-bottom: 9px;
+      color: white; }
+    .overlay .overlay-flex-wrapper a {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      font-weight: 300;
+      color: #d4d4d4; }
+    .overlay .overlay-flex-wrapper li {
+      padding: 8px; }
+    .overlay .overlay-flex-wrapper ul {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 200px;
+              flex: 1 0 200px;
+      padding: 0 29px; }
 
-@media screen and (max-height: 450px) {
-  .overlay {
-    overflow-y: auto; }
-    .overlay a {
-      font-size: 20px; }
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px; } }
-
-.menu-header {
-  font-size: 26px;
-  line-height: 1.2;
+a {
   color: white;
-  padding-bottom: 15px;
-  border-bottom: 1px solid white; }
+  text-decoration: none; }
 
-.nav-collapse-fix .navbar-header {
-  float: none; }
-
-.nav-collapse-fix .navbar-toggle {
-  display: block; }
-
-.nav-collapse-fix .navbar-collapse {
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
-  .nav-collapse-fix .navbar-collapse.collapse {
-    display: none !important; }
-
-.nav-collapse-fix .navbar-nav {
-  float: none !important;
-  margin: 7.5px -15px; }
-  .nav-collapse-fix .navbar-nav > li {
-    float: none; }
-    .nav-collapse-fix .navbar-nav > li > a {
-      padding-top: 10px;
-      padding-bottom: 10px; }
-
-.navbar, .navbar.navbar-default {
-  background-color: rgba(39, 113, 174, 0.91); }
+.global-nav a {
+  color: white;
+  text-decoration: none; }
 
 /*# sourceMappingURL=menu.css.map */

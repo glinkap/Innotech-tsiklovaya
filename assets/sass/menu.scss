@@ -1,110 +1,187 @@
-//colors
-$black: rgb(0,0,0);
-$black_90: rgba(0,0,0, 0.92);
-$color_gray_approx: #818181; 
-$seashell: #f1f1f1;
+//colors 
+$color_chardonnay_approx: #ffd08a;
+$color_hit_pink_approx: #ffa376;
+$color_contessa_approx: #d26578;
+$color_eminence_approx: #682a84;
+$color_lucky_point_approx: #241668;
+$white: white;
+$white_60: rgba(255,255,255,0.6);
+$black_80: rgba(0,0,0,0.95);
+$transition: all 0.35s;
 
-.overlay {
-    height: 0;
-    width: 100%;
+//fonts
+$font_0: "Roboto", "Helvetica", "Arial", sans-serif;
+
+ul {
+    li {
+        list-style-type: none;
+    }
+    &.nav-wrapper li {
+        z-index: 1;
+    }
+}
+
+.global-nav {
+    position: relative;
     position: fixed;
-    z-index: 1031;
+    z-index: 1030;
+    width: 100%;
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+.nav-inner {
+    margin: 30px;
+}
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;    
+    a {
+        transition: $transition;
+    }
+    a:hover {
+        color: $white_60;
+    }
+}
+.navsection-logo {
+    transition: $transition;
+    a {
+        display: flex;
+        align-items: center;
+    }
+    &:hover {
+        fill-opacity: 0.6;
+    }
+    svg {
+        width: 117px;
+    }
+}
+.navsection-primary {
+    display: none;
+    a {
+        font-size: 12px;
+        margin: 0;
+        padding: 0 8px;
+    }
+    ul {
+        display: flex;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+}
+.navsection-mobile { 
+    display: none;
+    position: relative;
+    display: flex;
+}
+.mobilemenu-wrapper {
+    display: flex;
+    height: 28px;
+    width: 34px;
+    cursor: pointer;
+    z-index: 500;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: opacity 0.25s ease;
+    &:hover {
+        opacity: 0.6;
+    }
+    h2 {
+        font-size: 0 !important;
+    }
+    &.active {
+        .bar-1 {
+            //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: translateY(11px) translateX(0) rotate(45deg);
+            background: $white;
+        }
+        .bar-2 {
+            opacity: 0;
+            background: $white;
+        }
+        .bar-3 {
+            //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: translateY(-11px) translateX(0) rotate(-45deg);
+            background: $white;
+        }
+    }
+    span {
+        background: $white;
+        border: none;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: all 0.35s ease;
+        cursor: pointer;
+        &:nth-of-type(1) {
+            top: 0;
+        }
+        &:nth-of-type(2) {
+            top: 11px;
+        }
+        &:nth-of-type(3) {
+            top: 22px;
+        }
+    }
+}
+.overlay {
+    // text-align: center;
+    // padding-top: 50px;
+    background: $black_80;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: $black;
-    background-color: $black_90;
-    overflow-y: hidden;
-    @media screen and (max-width: 992px) {
-        overflow-y: auto;
-    }
-    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-    transition: 0.5s;
-    a {
-        text-align: left;
-        padding: 8px;
-        text-decoration: none;
-        font-size: 16px;
-        color: $color_gray_approx;
-        display: block;
-        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-        transition: 0.3s;
-        &:hover {
-            color: $seashell;
-        }
-        &:focus {
-            color: $seashell;
-        }
-    }
-    .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
-}
-.overlay-content {
-    position: relative;
-    top: 8%;
     width: 100%;
-    // text-align: center;
-    margin-top: 30px;
-}
-@media screen and(max-height: 450px) {
-    .overlay {
-        overflow-y: auto;
+    height: 0;
+    visibility: hidden;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: visibility 0.35s, height 0.35s;
+    overflow: auto;
+    &.open {
+        visibility: visible;
+        height: 100%;
+    }
+    .overlay-flex-wrapper {
+        // height: 100%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        h2 {
+            font-size: 2.4rem ;
+            font-weight: 400;
+            border-bottom: 1px solid white;
+            padding-bottom: 9px;
+            color: white;
+        }
         a {
-            font-size: 20px;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            font-weight: 300;
+            color: hsla(0, 0%, 83%, 1);
         }
-        .closebtn {
-            font-size: 40px;
-            top: 15px;
-            right: 35px;
+        li {
+            padding: 8px;
         }
-    }
-}
-.menu-header {
-    font-size: 26px;
-    line-height: 1.2;
-    color: white;
-    padding-bottom: 15px;
-    border-bottom: 1px solid white;
-}
 
-
-
-//togler fix
-
-$white_10: rgba(255,255,255,0.1);
-.nav-collapse-fix {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    box-shadow: inset 0 1px 0 $white_10;
-    &.collapse {
-        display: none!important;
-    }
-}
-.navbar-nav {
-    float: none!important;
-    margin: 7.5px -15px;
-    > li {
-        float: none;
-        > a {
-            padding-top: 10px;
-            padding-bottom: 10px;
+        ul {
+            flex: 1 0 200px;
+            padding: 0 29px;    
         }
     }
 }
-} 
-
-.navbar, .navbar.navbar-default {
-    background-color: rgba(39, 113, 174, 0.91);
+a {
+    color: $white;
+    text-decoration: none;
 }
-
-
+// right: 0;
+.global-nav a {
+    color: $white;
+    text-decoration: none;
+}

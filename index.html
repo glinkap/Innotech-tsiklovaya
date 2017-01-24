@@ -21,86 +21,125 @@
 		<link href="assets/css/custome.css?4" rel="stylesheet" />
 	</head>
 	<body class="index-page">
-		<!-- Navbar -->
-		<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll nav-collapse-fix">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index" onclick="openNav()">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a href="index.html">
-						<div class="logo-container">
-							<div class="logo">
-								<img src="assets/img/logo.png">
-							</div>
-							<!--       <div class="brand">
-								Innotrech russia
-							</div> -->
-						</div>
-					</a>
-				</div>
-				<!-- <ul class="nav navbar-nav navbar-right">
-					<li><a href="#" onclick="openNav()" ><i class="material-icons" style="font-size: 60px; ">dehaze</i></a></li>
-				</ul> -->
-				<!-- 	    <div class="collapse navbar-collapse" id="navigation-index">
-								<ul class="nav navbar-nav navbar-right">
-									<li>
-																<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-									</li>
-							</ul>
-				</div> -->
-			</div>
-		</nav>
-		<!-- End Navbar -->
-		<div id="myNav" class="overlay overlay-">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="overlay-content">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<p class="menu-header">Прогресс</p>
-							<a href="javascript:void(0)">Ключевые показатели эффективности</a>
-							<a href="javascript:void(0)">Производственный календарь</a>
-							<a href="javascript:void(0)">Квартальный календарь.  Распределение рабочего времени</a>
-							<a href="javascript:void(0)">Ключевые показатели эффективности</a>
-							<a href="javascript:void(0)">Ключевые специальности по линиям</a>
-							<a href="javascript:void(0)">База данных 2016-2017</a>
-							<a href="javascript:void(0)">Матрица сегментации</a>
-							<a href="javascript:void(0)">Продуктовый план визитов</a>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<p class="menu-header">Навыки продаж</p>
-							<!-- a[href=javascript:void(0)]{}*6 -->
-							<a href="javascript:void(0)">Цели и задачи визита к врачу. Основные этапы визита к врачу. </a>
-							<a href="javascript:void(0)">Проведение визита</a>
-							<a href="javascript:void(0)">Типы реакций клиента</a>
-							<a href="javascript:void(0)">Борьба с возражениями</a>
-							<a href="javascript:void(0)">Анализ результатов визита</a>
-							<a href="javascript:void(0)">Двойной визит</a>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<p class="menu-header">Работа с врачами</p>
-							<a href="javascript:void(0)">Флебодиа 600. Хирурги</a>
-							<a href="javascript:void(0)">Флебодиа 600. Гинекологи</a>
-							<a href="javascript:void(0)">Флебодиа 600. Проктологи</a>
-							<a href="javascript:void(0)">Полижинакс</a>
-							<a href="totema.html">Тотема</a>
-							<a href="javascript:void(0)">Флюдитек</a>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<p class="menu-header">Работа с аптеками</p>
-							<a href="javascript:void(0)">Стратегия работы с аптеками</a>
-							<a href="javascript:void(0)">Этапы визита в аптеку</a>
-							<a href="javascript:void(0)">Мерчендайзинг</a>
-							<a href="javascript:void(0)">Детейлинг</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- flexbox menu -->
+<header class="global-nav">
+  <nav role="navigation" class="nav-inner">
+    <ul class="nav-wrapper">
+      <!-- Start Logo Section -->
+      <li class="navsection-logo">
+        <a href="/">
+          
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 26">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+      }
+
+      .b {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>logo-innotech</title>
+  <g>
+    <path class="a" d="M2638.17,265c0.19,1,.09.69,0.23,0.92a1.49,1.49,0,0,0,.33.77,0.17,0.17,0,0,0,0,.15,0.21,0.21,0,0,1,0,.06,0.7,0.7,0,0,1-.52.57,0.26,0.26,0,0,0-.26,0,1.62,1.62,0,0,1-.29,0c-0.72.13-.2,0.91-0.3,1.36l0,0c-0.56.88,0.48,1.56,0.5,2.41a7.11,7.11,0,0,1,.37,1.64,7.09,7.09,0,0,0-.26.87,1.16,1.16,0,0,0-.14.42,22.2,22.2,0,0,0-.41,6.42,6.85,6.85,0,0,0,.23,1c-0.09,0,0,.09,0,0.14a2.39,2.39,0,0,1-.26,1.19c-0.13.4,0.15,0.77,0,1.19a0.47,0.47,0,0,1,0,.21,8.27,8.27,0,0,0,.49,2l-0.22.31c0,0.63-.09,1.21,0,1.84a4.45,4.45,0,0,1,.19,1.52,1.5,1.5,0,0,1,0,1h-7.22c-0.06-9-.06-17,0-26h7.59Z" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2647.05,290.42c-1.46,0-3.43.1-4.89,0.1a17.64,17.64,0,0,0,.19-4.19,4.38,4.38,0,0,0-.15-1.51,4.24,4.24,0,0,0,0-1.62c-0.18-.69,0-1.52-0.19-2.19a3.54,3.54,0,0,1,0-1.32c-0.33-.32.06-0.93-0.37-1.22-0.23-1.35-.29-2.66-0.52-4a3.5,3.5,0,0,0-.19-0.73c-0.12-.09-0.06-0.23-0.19-0.32l-0.22-.94a1.22,1.22,0,0,1,0-1.08,16.3,16.3,0,0,0,.78-1.84,5.49,5.49,0,0,0,.3-1.19,3.79,3.79,0,0,1-1.27-.7,0.51,0.51,0,0,1-.26-0.49,2.31,2.31,0,0,1,0-.45,2.31,2.31,0,0,0,.37-1.07c0.1-.13.1,0.36,0.15-0.64h6.44c0,9,0,16.82,0,25.42" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2712.33,267.93c0.55,0,4-.07,6.17,0v-2c-0.56,0-5.51,0-6.33,0-1.35.11-5.2,1.49-5.22,7a7.18,7.18,0,0,0,2,5.39A5.75,5.75,0,0,0,2713,280h5v-2h-5a3.67,3.67,0,0,1-2.64-1.09A5.47,5.47,0,0,1,2709,274h10v-2h-10c0.46-4,3.29-4.07,3.32-4.07" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2712.33,267.93c0.55,0,4-.07,6.17,0v-2c-0.56,0-5.51,0-6.33,0-1.35.11-5.2,1.49-5.22,7a7.18,7.18,0,0,0,2,5.39A5.75,5.75,0,0,0,2713,280h5v-2h-5a3.67,3.67,0,0,1-2.64-1.09A5.47,5.47,0,0,1,2709,274h10v-2h-10C2709.47,268,2712.3,267.93,2712.33,267.93Z" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2725.68,267.87c0.55,0,4,0,6.14,0l0-2c-0.56,0-5.52-.07-6.33,0-1.35.11-5.2,1.5-5.22,7a7.18,7.18,0,0,0,2,5.39,5.74,5.74,0,0,0,4.05,1.71H2732v-2h-5.66a3.76,3.76,0,0,1-2.64-1.13,5.45,5.45,0,0,1-1.41-4c0-4.63,3.35-5,3.39-5" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2725.68,267.87c0.55,0,4,0,6.14,0l0-2c-0.56,0-5.52-.07-6.33,0-1.35.11-5.2,1.5-5.22,7a7.18,7.18,0,0,0,2,5.39,5.74,5.74,0,0,0,4.05,1.71H2732v-2h-5.66a3.76,3.76,0,0,1-2.64-1.13,5.45,5.45,0,0,1-1.41-4C2722.31,268.21,2725.65,267.87,2725.68,267.87Z" transform="translate(-2630.54 -265)"/>
+    <polygon class="a" points="112.46 1 112.46 7 105.46 7 105.46 1 103.46 1 103.46 15 105.46 15 105.46 9 112.46 9 112.46 15 114.46 15 114.46 1 112.46 1"/>
+    <polygon class="a" points="112.46 1 112.46 7 105.46 7 105.46 1 103.46 1 103.46 15 105.46 15 105.46 9 112.46 9 112.46 15 114.46 15 114.46 1 112.46 1"/>
+    <path class="a" d="M2660.05,265.94l-5.82,0-0.23,1V280h2V267.9l3.83,0.06s4.39,0.13,4.39,2.94l0,9.42h2l0-9.42c0-4.07-4.5-5-6.24-5" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2660.05,265.94l-5.82,0-0.23,1V280h2V267.9l3.83,0.06s4.39,0.13,4.39,2.94l0,9.42h2l0-9.42C2666.3,266.83,2661.79,265.94,2660.05,265.94Z" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2674.08,265.94l-5.83,0-0.25,1V280h2V267.9l3.85,0.06s4.4,0.13,4.4,2.94l0.05,9.42h2l0-9.42c0-4.07-4.5-5-6.24-5" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2674.08,265.94l-5.83,0-0.25,1V280h2V267.9l3.85,0.06s4.4,0.13,4.4,2.94l0.05,9.42h2l0-9.42C2680.32,266.83,2675.82,265.94,2674.08,265.94Z" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2689,265.72a7.51,7.51,0,1,0,7,7.49,7.26,7.26,0,0,0-7-7.49m0,12.89a5.42,5.42,0,1,1,4.94-5.4,5.19,5.19,0,0,1-4.94,5.4" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2689,265.72a7.51,7.51,0,1,0,7,7.49A7.26,7.26,0,0,0,2689,265.72Zm0,12.89a5.42,5.42,0,1,1,4.94-5.4A5.19,5.19,0,0,1,2689,278.61Z" transform="translate(-2630.54 -265)"/>
+    <polygon class="a" points="65.46 3 69.46 3 69.46 15 71.46 15 71.46 3 76.46 3 76.46 1 65.46 1 65.46 3"/>
+    <polygon class="a" points="65.46 3 69.46 3 69.46 15 71.46 15 71.46 3 76.46 3 76.46 1 65.46 1 65.46 3"/>
+    <path class="a" d="M2650,267v13h2V265.67s-2,.06-2,1.38" transform="translate(-2630.54 -265)"/>
+    <path class="a" d="M2650,267.05V280h2V265.67S2650,265.73,2650,267.05Z" transform="translate(-2630.54 -265)"/>
+    <g>
+      <path class="b" d="M2710.68,283H2706v1h4v2h-2.62a1.79,1.79,0,0,0-1.71,2,1.77,1.77,0,0,0,1.71,2H2711v-6.21A0.85,0.85,0,0,0,2710.68,283Zm-0.68,6h-2.53a0.81,0.81,0,0,1-.84-1,0.82,0.82,0,0,1,.91-1H2710v2Z" transform="translate(-2630.54 -265)"/>
+      <path class="a" d="M2706.63,288a0.81,0.81,0,0,0,.84,1H2710v-2h-2.46A0.82,0.82,0,0,0,2706.63,288Z" transform="translate(-2630.54 -265)"/>
+      <path class="a" d="M2649.07,282l0,9h96.49v-9h-96.47Zm33.93,2h-1.42a0.77,0.77,0,0,0-.58.81V290h-1v-5.19a1.9,1.9,0,0,1,1.58-1.81H2683v1Zm7,6h-3.35a2.55,2.55,0,0,1-2.65-2.79V283h1v4.21a1.53,1.53,0,0,0,1.5,1.79h2.5v-6h1v7Zm6-1.85c0,0.81-.31,1.85-1.16,1.85H2691v-1h3.84a1.56,1.56,0,0,0,1.16-.93v-0.56c0-.35-0.79-0.52-1.16-0.52h-2.42a1.51,1.51,0,0,1-1.43-1.58v-0.63a1.71,1.71,0,0,1,1.43-1.78H2696v1h-3.57c-0.36,0-.43.46-0.43,0.8v0.61c0,0.35.06,0.58,0.43,0.58h2.42a1.26,1.26,0,0,1,1.16,1.52v0.63Zm7,0a2.35,2.35,0,0,1-2,1.85h-4v-1h4a1.35,1.35,0,0,0,1-.93v-0.56a1,1,0,0,0-1-.52h-2.42a1.64,1.64,0,0,1-1.57-1.59v-0.63a1.83,1.83,0,0,1,1.57-1.78H2702v1h-3.43a0.72,0.72,0,0,0-.57.78v0.63a0.54,0.54,0,0,0,.57.59H2701c0.85,0,2,.7,2,1.52v0.63Zm2,1.85h-1v-6.14c0-.57,1-0.59,1-0.59V290Zm6,0h-3.62a1.77,1.77,0,0,1-1.71-2,1.79,1.79,0,0,1,1.71-2H2710v-2h-4v-1h4.68a0.85,0.85,0,0,1,.32.79V290Z" transform="translate(-2630.54 -265)"/>
+    </g>
+  </g>
+</svg>
+          
+        </a>
+      </li>
+     <li><a href="#" style="font-size: 1.6rem;"><i class="material-icons" style="vertical-align: middle;font-size: 3rem;margin-right: 2px;margin-bottom: 4px;">cloud_download</i> Скачать</a></li>
+      <!-- End Logo Section -->
+   
+      <!-- Start Mobile Section -->
+      <li class="navsection-mobile">
+        <!-- Mobile Menu Button -->
+        <a class="mobilemenu-wrapper" id="toggle"><h2>Menu</h2>
+            <span class="bar-1"></span>
+            <span class="bar-2"></span>
+            <span class="bar-3"></span>
+          </a>
+        <!-- Overlay -->
+      </li>
+      <!-- End Mobile Section -->
+    </ul>
+        <div class="overlay" id="overlay">
+          <div class="overlay-flex-wrapper">
+            <ul>
+              <li><h2>Прогресс</h2></li>
+              <li><a href="javascript:void(0)">Ключевые показатели эффективности</a></li>
+              <li><a href="javascript:void(0)">Производственный календарь</a></li>
+              <li><a href="javascript:void(0)">Квартальный календарь. Распределение рабочего времени</a></li>
+              <li><a href="javascript:void(0)">Ключевые показатели эффективности</a></li>
+              <li><a href="javascript:void(0)">Ключевые специальности по линиям</a></li>              
+              <li><a href="javascript:void(0)">База данных 2016-2017</a></li>
+              <li><a href="javascript:void(0)">Матрица сегментации</a></li>
+              <li><a href="javascript:void(0)">Продуктовый план визитов</a></li>
+            </ul>
+            <ul>
+              <li><h2>Навыки продаж</h2></li>
+              <li><a href="javascript:void(0)">Цели и задачи визита к врачу. Основные этапы визита к врачу.</a></li>
+              <li><a href="javascript:void(0)">Проведение визита</a></li>
+              <li><a href="javascript:void(0)">Типы реакций клиента</a></li>
+              <li><a href="javascript:void(0)">Борьба с возражениями</a></li>
+              <li><a href="javascript:void(0)">Анализ результатов визита</a></li>              
+              <li><a href="javascript:void(0)">Двойной визит</a></li>
+            </ul>
+            <ul>
+              <li><h2>Работа с врачами</h2></li>
+              <li><a href="javascript:void(0)">Флебодиа 600. Хирурги</a></li>
+              <li><a href="javascript:void(0)">Флебодиа 600. Гинекологи</a></li>
+              <li><a href="javascript:void(0)">Флебодиа 600. Проктологи</a></li>
+              <li><a href="javascript:void(0)">Полижинакс</a></li>
+              <li><a href="javascript:void(0)">Тотема</a></li>              
+              <li><a href="javascript:void(0)">Флюдитек</a></li>
+            </ul>
+            <ul>
+              <li><h2>Работа с аптеками</h2></li>
+              <li><a href="javascript:void(0)">Стратегия работы с аптеками</a></li>
+              <li><a href="javascript:void(0)">Этапы визита в аптеку</a></li>
+              <li><a href="javascript:void(0)">Мерчендайзинг</a></li>
+              <li><a href="javascript:void(0)">Детейлинг</a></li>
+            </ul>
+          </div>
+        </div>
+  </nav>
+</header>
+
+
+
+		<!-- /flexbox menu -->
+
+
+
+
+
+
+
+
 		<div class="wrapper">
 			<div class="header header-filter" style="background-image: url('assets/img/bg-moscow.jpeg');">
 				<div class="container">
@@ -218,12 +257,16 @@
 <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
 <script type="text/javascript">
-function openNav() {
-document.getElementById("myNav").style.height = "100%";
-}
-function closeNav() {
-document.getElementById("myNav").style.height = "0%";
-}
+// function openNav() {
+// document.getElementById("myNav").style.height = "100%";
+// }
+// function closeNav() {
+// document.getElementById("myNav").style.height = "0%";
+// }
+  $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
 	$().ready(function(){
 		// the body of this function is in assets/material-kit.js
 		// materialKit.initSliders();
